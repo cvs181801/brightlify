@@ -1,38 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sura&display=swap');
+
+:root {
+  --deep-teal: #054A5D;
+  --light-teal: #10708C;
+  --light-blue: #3AB5D9;  
+  --bubblegum: #DD44A2;
+  --canary: #F0E71F;
+  --ff-main: 'Roboto', sans-serif;
+  --ff-accent: 'Sura', serif;
+
+} 
+
+body {
+  background: linear-gradient(180deg, var(--deep-teal) 2.31%, var(--light-teal) 26.73%, var(--light-blue) 51.16%, var(--bubblegum) 75.58%, var(--canary) 100%) no-repeat;
+  height: 100vh;
+  color: white;
+
+}
+
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoContainer {
+  padding: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: var(--ff-accent);
+  letter-spacing: .1rem;
+  font-size: 1.3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  font-family: var(--ff-main);
+  border: 1.5px solid white;
+  background: none;
   color: white;
+  letter-spacing: .2rem;
+  padding: .4em;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
